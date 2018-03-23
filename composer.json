@@ -1,0 +1,21 @@
+{
+    "name": "shintio/yii2-uikit",
+    "description": "UiKit widgets for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","uikit"],
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Shintio",
+            "email": "af@shtio.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "shintio\\uikit\\": ""
+        }
+    }
+}

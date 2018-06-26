@@ -5,7 +5,11 @@
  * @license https://shintio.com/license/
  */
 
-namespace shintio\uikit;
+namespace shintio\uikit\widgets;
+
+use shintio\uikit\helpers\Html;
+use shintio\uikit\HtmlContent;
+use shintio\uikit\Widget;
 
 /**
  * Accordion renders an accordion uikit component

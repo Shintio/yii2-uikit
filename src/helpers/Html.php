@@ -1,7 +1,11 @@
 <?php
 
-namespace shintio\uikit;
+namespace shintio\uikit\helpers;
 
+use shintio\uikit\HtmlContent;
+use shintio\uikit\widgets\Accordion;
+use shintio\uikit\widgets\Alert;
+use shintio\uikit\widgets\Article;
 use yii\helpers\ArrayHelper;
 
 // TODO: ?Align
@@ -93,7 +97,7 @@ class Html extends \yii\helpers\Html
 	{
 		self::addCssClass($options,'uk-badge');
 
-		return static::tag(span,$value,$options);
+		return static::tag('span',$value,$options);
 	}
 
 	public static function button($content='Button',$type='default',$options=[])
@@ -129,7 +133,7 @@ class Html extends \yii\helpers\Html
 
 	public static function append(&$html,$append)
 	{
-		if(is_a($html,HtmlContent::className()))
+		if(is_a($html,HtmlContent::class))
 		{
 			/** @var $html HtmlContent */
 			$html->append($append);

@@ -14,15 +14,8 @@
 	  "email": "af@shtio.com"
 	}
   ],
-  "repositories": [
-	{
-	  "type": "vcs",
-	  "url": "https://github.com/uikit/uikit"
-	}
-  ],
   "require": {
-	"yiisoft/yii2": "~2.0.0",
-	"uikit/uikit": "~3.0.0"
+	"yiisoft/yii2": "~2.0.0"
   },
   "autoload": {
 	"psr-4": {

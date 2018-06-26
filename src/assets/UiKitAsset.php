@@ -17,8 +17,13 @@ use yii\web\AssetBundle;
  */
 class UiKitAsset extends AssetBundle
 {
-	public $sourcePath = '@vendor/uikit/uikit';
+	public $sourcePath = '@vendor/uikit/yii2-uikit/uikit';
+
 	public $css = [
-		'css/bootstrap.css',
+		'dist/css/uikit.min.css',
+	];
+	public $js = [
+		'dist/js/uikit.min.js',
+		'dist/js/uikit-icons.min.js',
 	];
 }

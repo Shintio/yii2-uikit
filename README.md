@@ -1,6 +1,7 @@
-UiKit for Yii2
-==============
 UiKit widgets for Yii2
+===================================================
+
+Это руководство также доступно [на русском языке](./README.ru.md).
 
 Installation
 ------------
@@ -10,22 +11,18 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist shintio/yii2-uikit "*"
+composer require shintio/yii2-uikit "*"
 ```
 
 or add
 
 ```
-"shintio/yii2-uikit": "*"
+"shintio/yii2-profile": "*"
 ```
 
 to the require section of your `composer.json` file.
 
-
 Usage
------
+------------
 
-Once the extension is installed, simply use it in your code by  :
-
-```php
-<?= \shintio\uikit\AutoloadExample::widget(); ?>```
+Coming soon...

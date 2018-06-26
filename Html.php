@@ -104,20 +104,20 @@ class Html extends \yii\helpers\Html
 		return self::tag('button',$content,$options);
 	}
 
+	public static function linkButton($content='Button',$type='default',$url=[],$options=[])
+	{
+		self::addCssClass($options,'uk-button');
+		self::addCssClass($options,'uk-button-'.$type);
+
+		return self::a($content,$url,$options);
+	}
+
 	public static function icon($name,$options=[])
 	{
 		$tag=ArrayHelper::remove($options,'tag','span');
 		$options['uk-icon']=$name;
 
 		return static::tag($tag,'',$options);
-	}
-
-	public static function linkButton($content='Link',$url,$type='default',$options=[])
-	{
-		self::addCssClass($options,'uk-button');
-		self::addCssClass($options,'uk-button-'.$type);
-
-		return self::a($content,$url,$options);
 	}
 
 	/* TOOLS */
